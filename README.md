@@ -1,24 +1,20 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### rake task memo
 
-Things you may want to cover:
+```bash
+# task一覧
+$ bin/rake -T
 
-* Ruby version
+# DB関連
+$ bin/rake db:create
+$ bin/rake db:drop
+$ bin/rake db:seed
 
-* System dependencies
+## migration
+$ bin/rake db:migrate
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## create DB, load schema and seeds 
+$ bin/rake db:setup  
+$ bin/rake db:reset
+```
