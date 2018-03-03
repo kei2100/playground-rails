@@ -18,3 +18,10 @@ $ bin/rake db:migrate
 $ bin/rake db:setup  
 $ bin/rake db:reset
 ```
+
+### spring memo
+
+```bash
+# status 一覧
+$ bundle ex spring status
+```

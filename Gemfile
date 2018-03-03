@@ -39,6 +39,11 @@ group :development, :test do
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '~> 2.13'
   gem 'selenium-webdriver'
+
+  # use rspec. run `bundle install` and `rails generate rspec:install`
+  gem 'rspec-rails', '~> 3.7'
+  # rspec command for spring. run bundle exec spring binstub rspec to generate bin/rspec
+  gem 'spring-commands-rspec'
 end
 
 group :development do
