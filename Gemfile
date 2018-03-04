@@ -44,6 +44,8 @@ group :development, :test do
   gem 'rspec-rails', '~> 3.7'
   # rspec command for spring. run bundle exec spring binstub rspec to generate bin/rspec
   gem 'spring-commands-rspec'
+
+  gem 'factory_bot_rails', '~> 4.0'
 end
 
 group :development do
