@@ -19,6 +19,12 @@ $ bin/rake db:setup
 $ bin/rake db:reset
 ```
 
+### rails gen memo
+```bash
+# model
+bin/rails generate model Article title:string text:text
+```
+
 ### spring memo
 
 ```bash
