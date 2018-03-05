@@ -30,4 +30,6 @@ bin/rails generate model Article title:string text:text
 ```bash
 # status 一覧
 $ bundle ex spring status
+# stop
+$ bundle ex spring stop
 ```
