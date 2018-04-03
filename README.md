@@ -34,6 +34,13 @@ $ bundle ex spring status
 $ bundle ex spring stop
 ```
 
+### Docker
+
+```bash
+$ docker build -t playground-rails .
+$ docker run -it -v $(pwd)/db:/app/db -v $(pwd)/log:/app/log -p 3000:3000 playground-rails:latest /app/bin/rails s
+```
+
 ### sidekiq
 
 ```bash

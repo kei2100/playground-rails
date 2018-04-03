@@ -1,0 +1,10 @@
+/tmp
+/vendor
+/log
+/db
+
+/spec
+/test
+
+/.bundle
+/.idea
