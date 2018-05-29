@@ -8,4 +8,8 @@ Rails.application.routes.draw do
       post 'perform'
     end
   end
+
+  namespace :api, format: :json do
+    resource :sessions, only: %i(create destroy)
+  end
 end

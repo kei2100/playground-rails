@@ -22,7 +22,8 @@ $ bin/rake db:reset
 ### rails gen
 ```bash
 # model
-bin/rails generate model Article title:string text:text
+$ bin/rails generate model Article title:string text:text
+$ bin/rails generate migration AddColumnToUser user_id:string
 ```
 
 ### spring
