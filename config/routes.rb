@@ -3,9 +3,9 @@ Rails.application.routes.draw do
   root 'articles#index'
   resources :articles
 
-  resource :examples, only: %i() do
+  resource :jobs, only: %i() do
     member do
-      get 'job'
+      post 'perform'
     end
   end
 end
