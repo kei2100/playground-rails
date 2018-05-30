@@ -1,7 +1,14 @@
 module Api
   class SessionsController < Api::ApplicationController
+    # TODO refactor
     # とりあえず
     protect_from_forgery except: [:create, :destroy]
+
+    def new
+      render status: :ok, json: {
+        message: 'Please POST user_id, password'
+      }
+    end
 
     def create
       user = User.find_by(user_id: params[:user_id])&.authenticate(params[:password])
