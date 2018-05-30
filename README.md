@@ -1,49 +1,24 @@
 # README
 
-### rake task
+This README would normally document whatever steps are necessary to get the
+application up and running.
 
-```bash
-# task一覧
-$ bin/rake -T
+Things you may want to cover:
 
-# DB関連
-$ bin/rake db:create
-$ bin/rake db:drop
-$ bin/rake db:seed
+* Ruby version
 
-## migration
-$ bin/rake db:migrate
+* System dependencies
 
-## create DB, load schema and seeds 
-$ bin/rake db:setup  
-$ bin/rake db:reset
-```
+* Configuration
 
-### rails gen
-```bash
-# model
-$ bin/rails generate model Article title:string text:text
-$ bin/rails generate migration AddColumnToUser user_id:string
-```
+* Database creation
 
-### spring
+* Database initialization
 
-```bash
-# status 一覧
-$ bundle ex spring status
-# stop
-$ bundle ex spring stop
-```
+* How to run the test suite
 
-### Docker
+* Services (job queues, cache servers, search engines, etc.)
 
-```bash
-$ docker build -t playground-rails .
-$ docker run -it -v $(pwd)/db:/app/db -v $(pwd)/log:/app/log -p 3000:3000 playground-rails:latest /app/bin/rails s
-```
+* Deployment instructions
 
-### sidekiq
-
-```bash
-$ bundle ex sidekiq
-```
+* ...
