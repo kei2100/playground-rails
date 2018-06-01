@@ -43,6 +43,8 @@ gem 'rspec-rails'
 # rspec command for spring. run bundle exec spring binstub rspec to generate bin/rspec
 gem 'spring-commands-rspec'
 
+gem 'mongoid'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
