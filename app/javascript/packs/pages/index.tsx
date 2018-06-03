@@ -3,24 +3,24 @@ import * as ReactDOM from 'react-dom'
 import PropTypes from 'prop-types'
 
 interface HelloProps {
-    name: string
+  name: string
 }
 
 const Hello: React.SFC<HelloProps> = props => (
-    <div>Hello {props.name}!</div>
+  <div>Hello {props.name}!</div>
 )
 
 Hello.defaultProps = {
-    name: 'David'
+  name: 'David'
 }
 
 Hello.propTypes = {
-    name: PropTypes.string
+  name: PropTypes.string
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    ReactDOM.render(
-        <Hello name="top page !!" />,
-        document.body.appendChild(document.createElement('div')),
-    )
+  ReactDOM.render(
+    <Hello name="index page !!"/>,
+    document.body.appendChild(document.createElement('div')),
+  )
 })
