@@ -20,7 +20,7 @@ Hello.propTypes = {
 
 document.addEventListener('DOMContentLoaded', () => {
     ReactDOM.render(
-        <Hello name="React with TypeScript" />,
+        <Hello name="top page !!" />,
         document.body.appendChild(document.createElement('div')),
     )
 })
